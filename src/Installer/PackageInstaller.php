@@ -128,7 +128,7 @@ class PackageInstaller extends LibraryInstaller
         //
         $packagesDir = dirname($vendorDir) .DIRECTORY_SEPARATOR .'packages';
 
-        $packages = static::determinePlugins($packages, $pluginsDir, $vendorDir);
+        $packages = static::determinePlugins($packages, $packagesDir, $vendorDir);
 
         //
         $configFile = static::getConfigFile($vendorDir);
