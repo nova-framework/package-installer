@@ -235,7 +235,7 @@ class PackageInstaller extends LibraryInstaller
 \$baseDir = dirname(dirname(__FILE__));
 
 return array(
-    'plugins' => array(
+    'packages' => array(
 $data,
     ),
 );
@@ -248,7 +248,7 @@ PHP;
 $baseDir = dirname(dirname(__FILE__));
 
 return array(
-    'plugins' => array(),
+    'packages' => array(),
 );
 PHP;
         }
@@ -486,7 +486,7 @@ PHP;
 $baseDir = dirname(dirname(__FILE__));
 
 return array(
-    'plugins' => array(),
+    'packages' => array(),
 );
 PHP;
         if (! is_dir(dirname($path))) {
@@ -514,7 +514,7 @@ PHP;
 
         $data = '';
 
-        foreach ($config['plugins'] as $name => $packagePath) {
+        foreach ($config['packages'] as $name => $packagePath) {
             $packagePath = $properties['path'];
 
             //
@@ -528,7 +528,7 @@ PHP;
 \$baseDir = dirname(dirname(__FILE__));
 
 return array(
-    'plugins' => array(
+    'packages' => array(
 $data
     )
 );
@@ -541,7 +541,7 @@ PHP;
 $baseDir = dirname(dirname(__FILE__));
 
 return array(
-    'plugins' => array(),
+    'packages' => array(),
 );
 PHP;
         }
