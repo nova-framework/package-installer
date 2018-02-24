@@ -163,7 +163,7 @@ class PackageInstaller extends LibraryInstaller
             $results[$namespace] = $path;
         }
 
-        if (is_dir($pluginsDir)) {
+        if (is_dir($packagesDir)) {
             $iterator = new \DirectoryIterator($packagesDir);
 
             foreach ($iterator as $info) {
