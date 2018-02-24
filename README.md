@@ -1,1 +1,1 @@
-# A composer installer for Nova 4.x plugins
+# A composer installer for Nova 3.x packages
